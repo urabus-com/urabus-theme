@@ -121,7 +121,7 @@
               .full-name-tlist {
                 font-size: var(--font-down-2);
                 font-weight: normal;
-                color: var(--primary);
+                color: var(--primary-medium);
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -129,7 +129,7 @@
               .username {
                 font-size: var(--font-down-2);
                 font-weight: normal;
-                color: var(--primary-high-or-secondary-low);
+                color: var(--primary-medium);
               }
               .list-date {
                 display: block;
