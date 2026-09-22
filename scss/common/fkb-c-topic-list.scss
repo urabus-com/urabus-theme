@@ -79,7 +79,7 @@
         &__category {
           display: flex;
           justify-content: right;
-          .badge-category__wrapper {
+         /* .badge-category__wrapper {
             margin: 0 0.5em -1em auto;
             font-size: var(--font-down-2);
             font-weight: normal;
@@ -89,7 +89,7 @@
                 border-radius: 0 0 calc(var(--d-default-border-radius) * 0.75) calc(var(--d-default-border-radius) * 0.75);
               }
             }
-          }
+          }*/
         }
         
         &__author {

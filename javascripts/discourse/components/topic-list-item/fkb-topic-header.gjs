@@ -9,6 +9,15 @@ import FkbTopicListSection from "./fkb-topic-list-section";
 export default class FkbTopicHeader extends FkbTopicListSection {
   <template>
     <div class="tli-top-section">
+
+      <div class="tli-top-section__category">
+        {{#unless this.topic.hideCategory}}
+          {{#unless this.topic.isPinnedUncategorized}}
+            {{categoryLink this.topic.category}}
+          {{/unless}}
+        {{/unless}}
+      </div>
+
       <div class="tli-top-section__author">
         <UserLink @user={{get this.topic.posters "0.user"}}>
           <div class="topic-list-avatar">
@@ -26,17 +35,7 @@ export default class FkbTopicHeader extends FkbTopicListSection {
             </div>
           </div>
         </UserLink>
-
-        <div class="tli-top-section__category">
-          {{#unless this.topic.hideCategory}}
-            {{#unless this.topic.isPinnedUncategorized}}
-              {{categoryLink this.topic.category}}
-            {{/unless}}
-          {{/unless}}
-        </div>
       </div>
-
-      </div>
-
+    </div>
   </template>
 }
