@@ -26,15 +26,17 @@ export default class FkbTopicHeader extends FkbTopicListSection {
             </div>
           </div>
         </UserLink>
+
+        <div class="tli-top-section__category">
+          {{#unless this.topic.hideCategory}}
+            {{#unless this.topic.isPinnedUncategorized}}
+              {{categoryLink this.topic.category}}
+            {{/unless}}
+          {{/unless}}
+        </div>
       </div>
 
-      <div class="tli-top-section__category">
-        {{#unless this.topic.hideCategory}}
-          {{#unless this.topic.isPinnedUncategorized}}
-            {{categoryLink this.topic.category}}
-          {{/unless}}
-        {{/unless}}
       </div>
-    </div>
+
   </template>
 }
