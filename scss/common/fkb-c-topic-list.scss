@@ -75,7 +75,6 @@
       .tli-top-section {
         display: flex;
         flex-direction: row;
-        padding: 2em;
         
         &__category {
           display: flex;
@@ -108,8 +107,8 @@
               flex: 0 0 auto;
               gap: 0.5em;
               margin: 0 8px 0 0;
-              width: 24px;
-              height: 24px;
+              max-width: 24px;
+              max-height: 24px;
             }
             .name-and-date {
               display: flex;
