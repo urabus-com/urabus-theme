@@ -95,7 +95,7 @@
         &__author {
           min-width: 0;
           max-width: 100%;
-          padding: 1em 0 0.5em 0;
+          //padding: 1em 0 0.5em 0;
           margin-right: auto;
           a {
             display: flex;
@@ -112,15 +112,15 @@
               display: flex;
               min-width: 0;
               max-width: 100%;
-              flex-direction: column;
+              flex-direction: row;
               span:empty + span:not(:empty) {
                 color: var(--primary) !important;
                 font-weight: bold !important;
                 font-size: var(--font-down-1) !important;
               }
               .full-name-tlist {
-                font-size: var(--font-down-1);
-                font-weight: bold;
+                font-size: var(--font-down-2);
+                font-weight: normal;
                 color: var(--primary);
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -133,7 +133,7 @@
               }
               .list-date {
                 display: block;
-                font-size: var(--font-down-3);
+                font-size: var(--font-down-2);
                 color: var(--primary-medium);
               }
             }

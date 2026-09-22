@@ -17,6 +17,7 @@ export default class FkbTopicHeader extends FkbTopicListSection {
             <div class="name-and-date">
               <span class="full-name-tlist">{{this.topic.creator.name}}</span>
               <span class="username">{{this.topic.creator.username}}</span>
+              .
               <time
                 class="list-date"
                 datetime={{this.topic.createdAt}}
