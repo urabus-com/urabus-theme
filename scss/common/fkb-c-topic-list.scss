@@ -72,9 +72,8 @@
       overflow: hidden;
       @include bg-br;
 
-      .bullet-separator,
-      &_excerpt {
-        display: none;
+      .bullet-separator{
+        padding: 1em;
       }
       
       .tli-top-section {

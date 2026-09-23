@@ -17,7 +17,7 @@ export default class FkbTopicHeader extends FkbTopicListSection {
             <div class="name-and-date">
               <span class="full-name-tlist">{{this.topic.creator.name}}</span>
               <span class="username">{{this.topic.creator.username}}</span>
-              <span>&bull;</span>
+              <span class="bullet-separator">&bull;</span>
               <time
                 class="list-date"
                 datetime={{this.topic.createdAt}}
@@ -50,7 +50,7 @@ export default class FkbTopicHeader extends FkbTopicListSection {
         {{/unless}}
       </div>
 
-      <span>&bull;</span>
+      <span class="bullet-separator">&bull;</span>
 
       <div class="tli-top-section__author">
         <UserLink @user={{get this.topic.posters "0.user"}}>
