@@ -50,14 +50,14 @@ export default class FkbTopicHeader extends FkbTopicListSection {
         {{/unless}}
       </span>
 
-      <span>&bull;</span>
+      <span>&bull;&nbsp;</span>
 
       <span class="tli-top-section__author">
         <UserLink @user={{get this.topic.posters "0.user"}}>
           <div class="topic-list-avatar">
             
             <div class="name-and-date">
-              <span class="full-name-tlist">Posted by: {{this.topic.creator.name}}</span>
+              <span class="full-name-tlist">Posted by: &nbsp;{{this.topic.creator.name}}</span>
               <span class="username">{{this.topic.creator.username}}</span>
               <time
                 class="list-date"
