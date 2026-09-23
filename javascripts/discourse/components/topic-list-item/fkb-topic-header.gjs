@@ -13,11 +13,11 @@ export default class FkbTopicHeader extends FkbTopicListSection {
       <div class="tli-top-section__author">
         <UserLink @user={{get this.topic.posters "0.user"}}>
           <div class="topic-list-avatar">
-            {{avatar (get this.topic.posters "0.user") imageSize="large"}}
+            {{avatar (get this.topic.posters "0.user") imageSize="small"}}
             <div class="name-and-date">
               <span class="full-name-tlist">{{this.topic.creator.name}}</span>
               <span class="username">{{this.topic.creator.username}}</span>
-              <span>&bull;</span>
+              <span class="bullet-separator">&bull;</span>
               <time
                 class="list-date"
                 datetime={{this.topic.createdAt}}
@@ -36,6 +36,43 @@ export default class FkbTopicHeader extends FkbTopicListSection {
             {{categoryLink this.topic.category}}
           {{/unless}}
         {{/unless}}
+      </div>
+
+    </div>
+
+    <div class="tli-top-section">
+
+      <div class="tli-top-section__category">
+        {{#unless this.topic.hideCategory}}
+          {{#unless this.topic.isPinnedUncategorized}}
+            {{categoryLink this.topic.category}}
+          {{/unless}}
+        {{/unless}}
+      </div>
+
+      <span class="bullet-separator">&bull;</span>
+
+      <div class="tli-top-section__author">
+        <UserLink @user={{get this.topic.posters "0.user"}}>
+          <div class="topic-list-avatar">
+            
+            <div class="name-and-date">
+              Posted by: 
+              <span class="full-name-tlist">{{this.topic.creator.name}}</span>
+              <span class="username">{{this.topic.creator.username}}</span>
+              <time
+                class="list-date"
+                datetime={{this.topic.createdAt}}
+                {{formatDate
+                  this.topic.createdAt
+                  format="medium"
+                  noTitle="true"
+                  leaveAgo="true"
+                }}
+              </time>
+            </div>
+          </div>
+        </UserLink>
       </div>
 
     </div>
