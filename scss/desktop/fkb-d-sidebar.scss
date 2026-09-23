@@ -18,6 +18,13 @@
   }
 }
 
+.sidebar-section-header-text {
+  font-size: var(--font-up-1);
+  font-weight: var(--font-weight-bold);
+  color: var(--header_primary);
+  text-transform: uppercase;
+}
+
 body.has-sidebar-page {
   #main-outlet-wrapper {
     padding-left: 1em;    

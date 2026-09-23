@@ -54,8 +54,7 @@ body[class*="category-"] {
       border-top: none;
       .category {
         border-left: none;
-        h3 {
-          padding-left: 0.5em;
+        h2 {
           border-left: 6px solid var(--category-color);
         }
       }
