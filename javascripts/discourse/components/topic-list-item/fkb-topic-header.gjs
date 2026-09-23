@@ -10,38 +10,6 @@ export default class FkbTopicHeader extends FkbTopicListSection {
   <template>
     <div class="tli-top-section">
 
-      <div class="tli-top-section__author">
-        <UserLink @user={{get this.topic.posters "0.user"}}>
-          <div class="topic-list-avatar">
-            {{avatar (get this.topic.posters "0.user") imageSize="small"}}
-            <div class="name-and-date">
-              <span class="full-name-tlist">{{this.topic.creator.name}}</span>
-              <span class="username">{{this.topic.creator.username}}</span>
-              <span>&bull;</span>
-              <time
-                class="list-date"
-                datetime={{this.topic.createdAt}}
-              >
-                {{i18n (themePrefix "created_at")}}
-                {{formatDate this.topic.createdAt format="tiny"}}
-              </time>
-            </div>
-          </div>
-        </UserLink>
-      </div>
-
-      <div class="tli-top-section__category">
-        {{#unless this.topic.hideCategory}}
-          {{#unless this.topic.isPinnedUncategorized}}
-            {{categoryLink this.topic.category}}
-          {{/unless}}
-        {{/unless}}
-      </div>
-
-    </div>
-<br><br>
-    <div class="tli-top-section">
-
       <span class="tli-top-section__category">
         {{#unless this.topic.hideCategory}}
           {{#unless this.topic.isPinnedUncategorized}}
