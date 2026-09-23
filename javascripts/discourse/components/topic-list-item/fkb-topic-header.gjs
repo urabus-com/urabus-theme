@@ -63,6 +63,7 @@ export default class FkbTopicHeader extends FkbTopicListSection {
               <time
                 class="list-date"
                 datetime={{this.topic.createdAt}}
+              >
                 {{formatDate
                   this.topic.createdAt
                   format="medium"
