@@ -71,10 +71,6 @@
       box-sizing: border-box;
       overflow: hidden;
       @include bg-br;
-
-      .bullet-separator{
-        padding: 1em;
-      }
       
       .tli-top-section {
         display: flex;
