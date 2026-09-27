@@ -44,7 +44,8 @@ export default class FkbTopicBody extends FkbTopicListSection {
         </a>
       {{/if}}
 
-      {{discourseTags this.topic mode="list" tagsForUser=this.tagsForUser}}
+      <!--remove tags from topic list-->
+      <!-- {{discourseTags this.topic mode="list" tagsForUser=this.tagsForUser}}-->
     </div>
 
     <FkbTopicMeta @outletArgs={{@outletArgs}} />

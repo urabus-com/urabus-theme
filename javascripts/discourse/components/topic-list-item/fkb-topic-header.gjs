@@ -25,7 +25,7 @@ export default class FkbTopicHeader extends FkbTopicListSection {
           <div class="topic-list-avatar">
             
             <div class="name-and-date">
-              <span class="full-name-tlist">Posted by:&nbsp;{{this.topic.creator.name}}</span>
+              <span class="full-name-tlist">{{this.topic.creator.name}}</span>
               <span class="username">{{this.topic.creator.username}}</span>
               &nbsp;
               <time
