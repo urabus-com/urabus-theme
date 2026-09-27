@@ -24,13 +24,6 @@ export default class FkbTopicMeta extends FkbTopicListSection {
         {{icon "far-eye"}}
       </a>
 
-      <UserLink
-        @user={{this.topic.lastPosterUser}}
-        class="latest-poster-tlist"
-      >
-        {{avatar this.topic.lastPosterUser imageSize="tiny"}}
-      </UserLink>
-
       <a
         href={{this.topic.lastPostUrl}}
         class="latest-activity-tlist"
