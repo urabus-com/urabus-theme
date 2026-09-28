@@ -49,7 +49,7 @@
         max-width: 100%;
         width: 100%;
         box-sizing: border-box;
-        font-size: var(--font-up-1);
+        font-size: var(--font-down-1);
         grid-area: tc-right-sidebar;
         transition: transform var(--d-sidebar-animation-time);
         body.fkb-panel-hidden & {
