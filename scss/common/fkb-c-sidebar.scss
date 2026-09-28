@@ -10,3 +10,10 @@
 .sidebar-section[data-section-name="categories"] {
   display: none;
 }
+
+.sidebar-section-header-text {
+  font-size: var(--font-up-1);
+  font-weight: var(--font-weight-bold);
+  color: var(--header_primary);
+  text-transform: uppercase;
+}
