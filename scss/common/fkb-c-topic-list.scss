@@ -70,8 +70,8 @@
       font-size: var(--font-up-1-rem);
       box-sizing: border-box;
       overflow: hidden;
-      background: var(--header_background);
-      //@include bg-br;
+      @include bg-br;
+      background: var(--header_background) !important;
       
       .tli-top-section {
         display: flex;
