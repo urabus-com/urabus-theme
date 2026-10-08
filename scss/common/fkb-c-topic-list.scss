@@ -90,7 +90,8 @@
                 border-radius: 0 0 calc(var(--d-default-border-radius) * 0.75) calc(var(--d-default-border-radius) * 0.75);
               }
             }
-          }::after {
+          }
+          .badge-category__wrapper::after {
             content: &bull;
           }
         }
