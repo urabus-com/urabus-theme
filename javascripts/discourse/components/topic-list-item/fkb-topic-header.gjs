@@ -14,14 +14,12 @@ export default class FkbTopicHeader extends FkbTopicListSection {
         {{#unless this.topic.hideCategory}}
           {{#unless this.topic.isPinnedUncategorized}}
             {{categoryLink this.topic.category}} 
-            <span class="badge-category__name">&bull;</span>  
           {{/unless}}
         {{/unless}}
       </span>
       <span class="tli-top-section__author">
         <UserLink @user={{get this.topic.posters "0.user"}}>
           <div class="topic-list-avatar">
-            
             <div class="name-and-date">
               <span class="full-name-tlist">{{this.topic.creator.name}}</span>
               <span class="username">{{this.topic.creator.username}}</span>
