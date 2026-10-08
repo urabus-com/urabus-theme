@@ -13,7 +13,8 @@ export default class FkbTopicHeader extends FkbTopicListSection {
       <span class="tli-top-section__category">
         {{#unless this.topic.hideCategory}}
           {{#unless this.topic.isPinnedUncategorized}}
-            {{categoryLink this.topic.category}} &bull;
+            {{categoryLink this.topic.category}} 
+            <span class="badge-category__name">&bull;</span>  
           {{/unless}}
         {{/unless}}
       </span>
@@ -24,7 +25,6 @@ export default class FkbTopicHeader extends FkbTopicListSection {
             <div class="name-and-date">
               <span class="full-name-tlist">{{this.topic.creator.name}}</span>
               <span class="username">{{this.topic.creator.username}}</span>
-              &nbsp;
               <time
                 class="list-date"
                 datetime={{this.topic.createdAt}}
