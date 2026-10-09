@@ -118,11 +118,11 @@
               min-width: 0;
               max-width: 100%;
               flex-direction: row;
-              padding-right: 3px;
               span:empty + span:not(:empty) {
                 color: var(--primary-medium) !important;
                 font-weight: normal !important;
                 font-size: var(--font-down-2) !important;
+                padding-right: 3px;
               }
               .full-name-tlist {
                 font-size: var(--font-down-2);
