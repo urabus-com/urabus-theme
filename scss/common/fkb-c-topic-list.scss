@@ -76,12 +76,13 @@
       .tli-top-section {
         display: flex;
         flex-direction: row;
-        
+        padding-bottom: 4px;
+
         &__category {
           display: flex;
           justify-content: right;
           .badge-category__wrapper {
-            margin: 0 0.5em -1em auto;
+            margin: 0 3px 0 auto;
             font-size: var(--font-down-2);
             font-weight: normal;
             @if $category-badge-style == "box" {
@@ -117,6 +118,7 @@
               min-width: 0;
               max-width: 100%;
               flex-direction: row;
+              padding-right: 3px;
               span:empty + span:not(:empty) {
                 color: var(--primary-medium) !important;
                 font-weight: normal !important;
