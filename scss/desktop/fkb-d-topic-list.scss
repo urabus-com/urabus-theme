@@ -75,7 +75,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
   
   #main-outlet-wrapper {
     &.wrap {
-      max-width: calc((var(--d-sidebar-width) * 2) + var(--d-max-width)) !important;
+      max-width: calc((var(--d-sidebar-width) * 2) + var(--d-max-width));
       @media screen and (max-width: 1099px) {
         max-width: calc(var(--d-sidebar-width) + var(--d-max-width));
       }

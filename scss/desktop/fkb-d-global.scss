@@ -8,7 +8,14 @@
   #main-outlet {
     padding-top: 2em;
     .has-full-page-chat & {
-      padding-top: 0 !important; 
+      padding-top: 0; 
     }
+  }
+}
+
+body.has-sidebar-page {
+  .wrap {
+    // increase page max-width to accommodate sidebar width
+    max-width: calc((var(--d-sidebar-width) * 2) + var(--d-max-width)) !important; 
   }
 }
